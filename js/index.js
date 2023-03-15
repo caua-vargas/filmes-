@@ -32,15 +32,22 @@ listarFilmes(filmes);
 return false;   
 }
 
-let listarFilmes = async (filmes) =>{
-    let listaFilmes = await document.querySelector("#lista-filmes");
+let listarFilmes = (filmes) =>{
+    let listaFilmes = document.querySelector("#lista-filmes");
     listaFilmes.innerHTML = "";
     console.log(listaFilmes);
     if (filmes.length > 0) {
     filmes.forEach(async(filme)=> {
-    listaFilmes.appendChild(await filme.getCard());
+    listaFilmes.appendChild( filme.getCard());
     });
 }
 }
 
-
+let detalhelFilme = async (id)=>{
+    fetch("http://www.omdbapi.com/?apikey=f9f61240&s="+id)
+    .then((resp)=> resp.json())
+    .then((resp)=>{
+        
+    })
+}
+//filme=new filme (botar isso dnentro do botão detalhe filme)
