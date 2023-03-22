@@ -75,5 +75,8 @@ class Filme
     getBtnDetalhes=()=>{
         return this.btnDetalhes
     }
+   getDetalhesFilme=()=>{
+    
+   }
     
 }

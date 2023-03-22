@@ -35,10 +35,15 @@ return false;
 let listarFilmes = (filmes) =>{
     let listaFilmes = document.querySelector("#lista-filmes");
     listaFilmes.innerHTML = "";
+
     console.log(listaFilmes);
+
     if (filmes.length > 0) {
     filmes.forEach(async(filme)=> {
-    listaFilmes.appendChild( filme.getCard());
+    listaFilmes.appendChild(await filme.getCard());
+    filme.getBtnDetalhes().onclick=()=>{
+        detalhesFilme(Filme.id);
+    }
     });
 }
 }
