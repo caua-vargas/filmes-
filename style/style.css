@@ -17,3 +17,81 @@
     padding: 0.5rem;
     font-size: 1rem;
 }
+
+#mostrar-filme{
+    width: 14rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    display: none;
+    margin: auto;
+}
+
+#mostrar-filme img{
+    width: 100%;
+}
+
+#mostrar-filme h5{
+    text-align: center;
+}
+
+#mostrar-filme p{
+    text-align: center;
+}
+
+#btnFechar{
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 0 10px 10px 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#btnFechar:hover{
+    background-color: #fff;
+    color: #000;
+}   
+
+.card button{
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.card{
+    width: 14rem;
+    margin: 1rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+#btnSalvar{
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 0 10px 10px 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+
